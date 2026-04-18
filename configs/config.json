@@ -1,0 +1,33 @@
+{
+  "model": {
+    "audio_embedding_dim": 1024,
+    "visual_embedding_dim": 1024,
+    "fusion_dim": 1024,
+    "num_emotions": 6,
+    "num_heads": 8,
+    "num_transformer_layers": 2,
+    "dropout": 0.1
+  },
+  "training": {
+    "optimizer": "AdamW",
+    "learning_rate": 3e-4,
+    "batch_size": 32,
+    "num_epochs": 50,
+    "weight_decay": 1e-5,
+    "scheduler": "cosine",
+    "warmup_epochs": 5
+  },
+  "data": {
+    "datasets": ["crema", "ravdess", "afew"],
+    "emotion_classes": 6,
+    "train_split": 0.7,
+    "val_split": 0.15,
+    "test_split": 0.15
+  },
+  "evaluation": {
+    "metrics": ["accuracy", "f1_score", "precision", "recall"],
+    "cross_dataset": true,
+    "save_predictions": true,
+    "save_confusion_matrix": true
+  }
+}

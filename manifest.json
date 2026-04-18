@@ -1,0 +1,22 @@
+﻿{
+    "datasets":  [
+                     {
+                         "audio_test":  "./embeddings/audio/crema_test.npy",
+                         "audio_val":  "./embeddings/audio/crema_val.npy",
+                         "name":  "CREMA-D",
+                         "audio_train":  "./embeddings/audio/crema_train.npy"
+                     },
+                     {
+                         "audio_test":  "./embeddings/audio/ravdess_test.npy",
+                         "audio_val":  "./embeddings/audio/ravdess_val.npy",
+                         "name":  "RAVDESS",
+                         "audio_train":  "./embeddings/audio/ravdess_train.npy"
+                     },
+                     {
+                         "visual_val":  "./embeddings/visual/afew_val.npy",
+                         "name":  "AFEW",
+                         "visual_train":  "./embeddings/visual/afew_train.npy",
+                         "visual_test":  "./embeddings/visual/afew_test.npy"
+                     }
+                 ]
+}
